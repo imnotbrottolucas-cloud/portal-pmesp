@@ -1,3 +1,3 @@
-# Portal PMESP V8
+# Portal PMESP V9 Corrigido
 
-Insígnias em carrossel igual ao modelo PMESP.
+Pacote completo corrigido: capacitação com imagem nova e texto funcionando, insígnias em carrossel e categorias ajustadas.
