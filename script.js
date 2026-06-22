@@ -1,5 +1,5 @@
 const events=[
-{year:"1830",title:"Criação do Corpo de Guardas Municipais Permanentes",images:["historia-1831-1.png","historia-1831-2.png"],text:[
+{year:"1830",title:"Criação do Corpo de Guardas Municipais Permanentes",images:["historia-1830-1.png","historia-1830-2.png"],text:[
 "Em 15 de dezembro de 1830, o então Presidente da Província de São Paulo, Brigadeiro Rafael Tobias de Aguiar, criou o Corpo de Guardas Municipais Permanentes, instituição que daria origem à atual Polícia Militar do Estado de São Paulo.",
 "A nova força foi criada com a missão de manter a ordem pública, garantir a segurança da população e apoiar as autoridades provinciais em um período de profundas transformações políticas e sociais no Brasil.",
 "O efetivo inicial era composto por 130 homens, sendo 100 integrantes da Infantaria e 30 da Cavalaria. Esse grupo ficou conhecido como os Cento e Trinta de Trinta e Um, tornando-se símbolo da origem da Corporação.",
@@ -98,15 +98,6 @@ function restartHistoryTimer(){
 function nextEvent(){renderEvent((currentIndex+1)%events.length)}
 function prevEvent(){renderEvent((currentIndex-1+events.length)%events.length)}
 
-document.addEventListener("DOMContentLoaded",()=>{
-  document.querySelectorAll(".timeline .dot").forEach(d=>d.addEventListener("click",()=>{
-    const i=events.findIndex(e=>e.year===d.dataset.year);
-    if(i>=0) renderEvent(i);
-  }));
-  renderEvent(0);
-});
-
-
 const ranks=[
 {name:"Comandante Geral - Coronel PM",category:"Oficiais Superiores",img:"insignia-01.png"},
 {name:"Coronel PM",category:"Oficiais Superiores",img:"insignia-02.png"},
@@ -152,6 +143,8 @@ document.addEventListener("DOMContentLoaded",()=>{
     const i=events.findIndex(e=>e.year===d.dataset.year);
     if(i>=0) renderEvent(i);
   }));
+
+  renderEvent(0);
 
   const dots=document.getElementById("rankDots");
   if(dots){

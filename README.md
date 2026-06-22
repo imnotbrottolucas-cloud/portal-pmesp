@@ -1,3 +1,3 @@
-# Portal PMESP V12
+# Portal PMESP V13
 
-História da PM atualizada com linha do tempo, textos completos e carrossel de fotos por ano.
+Versão corrigida: História em 1830, imagens dentro de assets/historia e carrossel funcionando.

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <div class="gov-top">
   <div class="gov-logo">SÃO PAULO<br><span>GOVERNO DO ESTADO</span></div>
   <div class="gov-social">fr · in · yt · ig · /governosp</div>
@@ -59,32 +60,25 @@
   </nav>
 </header>
 
-
-
-
 <main class="history-page official-history">
   <div class="history-wrap">
     <h2 class="history-title">História da PM</h2>
-
     <div class="timeline history-timeline">
-      <button class="dot active" data-year="1831"><span>1831</span></button>
+      <button class="dot active" data-year="1830"><span>1830</span></button>
       <button class="dot" data-year="1910"><span>1910</span></button>
       <button class="dot" data-year="1950"><span>1950</span></button>
       <button class="dot" data-year="1970"><span>1970</span></button>
       <button class="dot" data-year="2007"><span>2007</span></button>
       <button class="dot" data-year="2026"><span>2026</span></button>
     </div>
-
     <section class="history-card history-official-card">
       <button class="arrow left" onclick="prevEvent()">‹</button>
-
       <div class="history-text">
         <h3 id="eventTitle"></h3>
         <div id="eventText"></div>
       </div>
-
       <div class="history-image history-carousel-box">
-        <img id="eventImage" src="assets/historia/historia-1831-1.png" alt="História da PM">
+        <img id="eventImage" src="assets/historia/historia-1830-1.png" alt="História da PM">
         <div class="history-photo-controls">
           <button onclick="prevHistoryPhoto()">‹</button>
           <span id="photoCounter">1 de 2</span>
@@ -92,7 +86,6 @@
         </div>
         <div class="image-dots" id="historyPhotoDots"></div>
       </div>
-
       <button class="arrow right" onclick="nextEvent()">›</button>
     </section>
   </div>
@@ -136,6 +129,7 @@
     <button>SIC</button>
   </div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
