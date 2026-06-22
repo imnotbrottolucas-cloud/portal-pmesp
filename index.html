@@ -1,310 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portal PMESP</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMESP - Portal Institucional</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="govbar">
-    <div class="container govbar-content">
-      <span>Portal Institucional</span>
-      <span>Polícia Militar do Estado de São Paulo</span>
+  <div class="gov-top">
+    <div class="gov-logo">SÃO PAULO<br><span>GOVERNO DO ESTADO</span></div>
+    <div class="gov-social">fr · in · yt · ig · /governosp</div>
+  </div>
+
+  <header class="site-header">
+    <div class="brand-area">
+      <div class="crest">PM</div>
+      <div>
+        <h1>POLÍCIA MILITAR DO ESTADO DE SÃO PAULO</h1>
+        <p>Secretaria da Segurança Pública</p>
+      </div>
     </div>
+
+    <nav class="main-nav">
+      <a href="index.html">PORTAL DE NOTÍCIAS</a>
+      <div class="nav-item">
+        <a class="active" href="#">INSTITUCIONAL</a>
+        <div class="mega-menu">
+          <div>
+            <a href="capacitacao.html">Capacitação e Treinamento</a>
+            <a href="#">História da PM</a>
+            <a href="#">Insígnias</a>
+            <a href="#">Legislação</a>
+            <a href="#">Nossos Autores</a>
+          </div>
+          <div>
+            <a href="#">Organização</a>
+            <a href="#">Planejamento Estratégico</a>
+            <a href="#">Vultos Históricos</a>
+            <a href="#">Brasão de Armas</a>
+            <a href="#">Canção da PM</a>
+            <a href="#">Revista A Força Policial</a>
+          </div>
+          <div>
+            <h3>Programas de Policiamento</h3>
+            <a href="#">Policiamento Escolar</a>
+            <a href="#">Forças Táticas</a>
+            <a href="#">Radiopatrulha - Atendimento 190</a>
+            <a href="#">ROCAM</a>
+            <a href="#">Policiamento de Trânsito</a>
+            <a href="#">Policiamento Comunitário</a>
+          </div>
+        </div>
+      </div>
+      <a href="#">SERVIÇOS</a>
+      <a href="#">CONCURSOS</a>
+      <a href="#">COMUNIDADE</a>
+      <a href="#">FALE CONOSCO</a>
+    </nav>
   </header>
 
-  <header class="main-header">
-    <div class="container header-content">
-      <a class="brand" href="#inicio">
-        <div class="emblem">PM</div>
-        <div>
-          <strong>POLÍCIA MILITAR</strong>
-          <span>Estado de São Paulo</span>
-        </div>
-      </a>
-
-      <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-      <nav id="menu">
-        <a href="#inicio">Início</a>
-        <a href="#historia">História</a>
-        <a href="#ingresso">Ingresso</a>
-        <a href="#corregedoria">Corregedoria</a>
-        <a href="#legislacao">Legislação</a>
-        <a href="#insignias">Insígnias</a>
-        <a href="#faq">FAQ</a>
-      </nav>
+  <section class="hero-official">
+    <div class="hero-text">
+      <h2>A SEGURANÇA COMEÇA COM A CONEXÃO:</h2>
+      <h3>POLÍCIA MILITAR E CIDADÃO</h3>
+      <p>Portal institucional, serviços, legislação, capacitação e informações ao cidadão.</p>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section id="inicio" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <p class="tag">Hierarquia • Disciplina • Profissionalismo</p>
-          <h1>Preservar a ordem pública e proteger a sociedade.</h1>
-          <p>
-            Portal institucional com informações sobre história, ingresso, legislação,
-            comunicação social, corregedoria, documentos e estrutura da Polícia Militar
-            do Estado de São Paulo.
-          </p>
-          <div class="actions">
-            <a class="btn primary" href="#corregedoria">Canal da Corregedoria</a>
-            <a class="btn light" href="#legislacao">Consultar Regulamentos</a>
-          </div>
-        </div>
+  <section class="service-strip">
+    <a>CADASTRO DE PESSOA SURDA, DE PCD AUDITIVA OU FALA</a>
+    <a>APLICATIVOS PMESP</a>
+    <a>UNIDADES POLICIAIS</a>
+    <a>BOLETIM DE OCORRÊNCIA ELETRÔNICO</a>
+    <a>ORIENTAÇÕES DE SEGURANÇA</a>
+  </section>
 
-        <div class="quick-card">
-          <h2>Acesso rápido</h2>
-          <div class="quick-links">
-            <a href="#historia">História da PMESP</a>
-            <a href="#ingresso">Editais e Ingresso</a>
-            <a href="#legislacao">R-1, R-2, R-3, R-4 e R-5</a>
-            <a href="#corregedoria">Denúncias</a>
-            <a href="#insignias">Hierarquia e Insígnias</a>
-            <a href="#ccomsoc">CComSoc</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="highlights">
-      <div class="container highlight-grid">
-        <article>
-          <strong>Missão</strong>
-          <p>Preservar a ordem pública e proteger a vida, o patrimônio e a dignidade humana.</p>
-        </article>
-        <article>
-          <strong>Visão</strong>
-          <p>Ser referência em segurança pública, excelência operacional e proximidade com a sociedade.</p>
-        </article>
-        <article>
-          <strong>Valores</strong>
-          <p>Hierarquia, disciplina, honra, lealdade, coragem, integridade e respeito à vida.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="historia" class="section">
-      <div class="container">
-        <div class="section-title">
-          <span>Institucional</span>
-          <h2>História da PMESP</h2>
-        </div>
-        <div class="text-box">
-          <p>
-            A Polícia Militar do Estado de São Paulo tem suas origens em 15 de dezembro
-            de 1831, com a criação do Corpo de Guardas Municipais Permanentes. Desde
-            então, a Corporação passou por diferentes fases históricas e denominações,
-            acompanhando o desenvolvimento do Estado e a evolução das necessidades de
-            segurança pública da população paulista.
-          </p>
-          <p>
-            Ao longo de sua trajetória, consolidou-se como instituição permanente, fundada
-            nos princípios da hierarquia e da disciplina, voltada ao policiamento ostensivo,
-            à preservação da ordem pública e à proteção da sociedade. A Corporação
-            também desenvolveu unidades especializadas, estruturas de ensino, comunicação
-            social, corregedoria e áreas administrativas essenciais ao funcionamento
-            institucional.
-          </p>
-          <p>
-            Atualmente, a PMESP segue em constante modernização, mantendo a tradição
-            institucional e o compromisso com a legalidade, a eficiência, o respeito ao
-            cidadão e a defesa da vida.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="ingresso" class="section alt">
-      <div class="container">
-        <div class="section-title">
-          <span>Carreira</span>
-          <h2>Ingresso na PMESP</h2>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <h3>Por que ingressar?</h3>
-            <p>Ingressar na Polícia Militar é assumir uma missão de serviço público, proteção à sociedade e compromisso com a ordem pública.</p>
-          </article>
-          <article class="card">
-            <h3>Carreira de Soldado</h3>
-            <p>Área destinada às informações sobre requisitos, formação, etapas do concurso e atuação inicial na Corporação.</p>
-          </article>
-          <article class="card">
-            <h3>Carreira de Oficial</h3>
-            <p>Informações sobre formação, liderança, comando, responsabilidades e desenvolvimento profissional do oficialato.</p>
-          </article>
-          <article class="card">
-            <h3>Escolas de Formação</h3>
-            <p>ESSD, Academia do Barro Branco, Escola de Sargentos e cursos de especialização.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="corregedoria" class="section">
-      <div class="container">
-        <div class="section-title">
-          <span>Controle e transparência</span>
-          <h2>Corregedoria</h2>
-        </div>
-
-        <div class="correg-grid">
-          <div class="text-box">
-            <h3>Apresentação</h3>
-            <p>
-              A Corregedoria é o canal destinado ao controle interno, análise de
-              manifestações, apuração de condutas e acompanhamento de procedimentos
-              administrativos, observando a legalidade, a imparcialidade, o contraditório
-              e a ampla defesa.
-            </p>
-            <ul class="check-list">
-              <li>Recebimento de denúncias e representações.</li>
-              <li>Acompanhamento de protocolos.</li>
-              <li>Orientação sobre sindicância, IPM e PAD.</li>
-              <li>Atuação com transparência e respeito às garantias individuais.</li>
-            </ul>
-          </div>
-
-          <form class="form" onsubmit="gerarProtocolo(event)">
-            <h3>Registrar manifestação</h3>
-            <label>Tipo de manifestação</label>
-            <select required>
-              <option value="">Selecione</option>
-              <option>Denúncia identificada</option>
-              <option>Denúncia anônima</option>
-              <option>Reclamação</option>
-              <option>Elogio</option>
-              <option>Solicitação de informação</option>
-            </select>
-
-            <label>Nome</label>
-            <input type="text" placeholder="Opcional em denúncia anônima" />
-
-            <label>E-mail para retorno</label>
-            <input type="email" placeholder="email@exemplo.com" />
-
-            <label>Relato</label>
-            <textarea required placeholder="Informe data, local, envolvidos e detalhes relevantes."></textarea>
-
-            <button class="btn primary" type="submit">Gerar protocolo</button>
-            <p id="protocol" class="protocol"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section id="legislacao" class="section alt">
-      <div class="container">
-        <div class="section-title">
-          <span>Biblioteca documental</span>
-          <h2>Legislação e Regulamentos</h2>
-        </div>
-
-        <input class="search" id="docSearch" onkeyup="filtrarDocumentos()" placeholder="Buscar documento, regulamento ou palavra-chave..." />
-
-        <div id="docs" class="docs">
-          <article class="doc"><strong>RDPM</strong><span>Regulamento Disciplinar da Polícia Militar.</span><button>Visualizar</button></article>
-          <article class="doc"><strong>R-1-PM</strong><span>Regulamento Geral da Polícia Militar.</span><button>Visualizar</button></article>
-          <article class="doc"><strong>R-2-PM</strong><span>Continências, sinais de respeito, cerimonial militar e ordem unida.</span><button>Visualizar</button></article>
-          <article class="doc"><strong>R-3-PM</strong><span>Regulamento de Serviços Gerais.</span><button>Visualizar</button></article>
-          <article class="doc"><strong>R-4-PM</strong><span>Escalas, plantões e emprego operacional.</span><button>Visualizar</button></article>
-          <article class="doc"><strong>R-5-PM</strong><span>Normas internas, procedimentos e documentos complementares.</span><button>Visualizar</button></article>
-          <article class="doc"><strong>Portarias</strong><span>Atos administrativos e determinações institucionais.</span><button>Visualizar</button></article>
-          <article class="doc"><strong>Resoluções</strong><span>Normas e diretrizes publicadas pelo comando.</span><button>Visualizar</button></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="insignias" class="section">
-      <div class="container">
-        <div class="section-title">
-          <span>Hierarquia</span>
-          <h2>Insígnias e Postos</h2>
-        </div>
-
-        <div class="rank-grid">
-          <div><b>Coronel</b><span>Oficial Superior</span></div>
-          <div><b>Tenente-Coronel</b><span>Oficial Superior</span></div>
-          <div><b>Major</b><span>Oficial Superior</span></div>
-          <div><b>Capitão</b><span>Oficial Intermediário</span></div>
-          <div><b>1º Tenente</b><span>Oficial Subalterno</span></div>
-          <div><b>2º Tenente</b><span>Oficial Subalterno</span></div>
-          <div><b>Aspirante</b><span>Praça Especial</span></div>
-          <div><b>Subtenente</b><span>Praça Graduada</span></div>
-          <div><b>Sargento</b><span>Praça Graduada</span></div>
-          <div><b>Cabo</b><span>Praça Graduada</span></div>
-          <div><b>Soldado</b><span>Praça</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="ccomsoc" class="section alt">
-      <div class="container">
-        <div class="section-title">
-          <span>Comunicação Social</span>
-          <h2>CComSoc</h2>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <h3>Notícias</h3>
-            <p>Publicações institucionais, avisos, comunicados e ações da Corporação.</p>
-          </article>
-          <article class="card">
-            <h3>Galeria</h3>
-            <p>Espaço para fotos de eventos, formaturas, solenidades e operações.</p>
-          </article>
-          <article class="card">
-            <h3>Campanhas</h3>
-            <p>Materiais educativos, campanhas de prevenção e comunicação com a comunidade.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="section">
-      <div class="container">
-        <div class="section-title">
-          <span>Dúvidas</span>
-          <h2>Perguntas Frequentes</h2>
-        </div>
-
-        <details>
-          <summary>Como consultar documentos?</summary>
-          <p>Acesse a área de Legislação e utilize a busca para localizar regulamentos, portarias e resoluções.</p>
-        </details>
-        <details>
-          <summary>Como registrar uma denúncia?</summary>
-          <p>Acesse a área da Corregedoria, selecione o tipo de manifestação e descreva os fatos com o máximo de detalhes.</p>
-        </details>
-        <details>
-          <summary>Onde ficam as informações de ingresso?</summary>
-          <p>Na aba Ingresso na PMESP, com informações sobre carreira, escolas, editais e requisitos.</p>
-        </details>
-        <details>
-          <summary>Este portal é oficial?</summary>
-          <p>Este é um modelo de portal institucional para projeto próprio. Para informações reais, consulte sempre os canais oficiais do Governo do Estado de São Paulo.</p>
-        </details>
-      </div>
-    </section>
+  <main class="container">
+    <h2 class="section-heading">ÚLTIMAS NOTÍCIAS</h2>
+    <div class="news-grid">
+      <article><div class="news-img"></div><h3>Comunicado institucional</h3><p>Publicações e informações da Corporação.</p></article>
+      <article><div class="news-img"></div><h3>Capacitação e treinamento</h3><p>Conheça os órgãos de ensino da Polícia Militar.</p></article>
+      <article><div class="news-img"></div><h3>Serviços ao cidadão</h3><p>Acesso rápido aos principais serviços institucionais.</p></article>
+    </div>
   </main>
 
-  <footer>
-    <div class="container footer-grid">
+  <footer class="footer">
+    <div class="footer-cols">
       <div>
-        <h3>POLÍCIA MILITAR DO ESTADO DE SÃO PAULO</h3>
-        <p>Portal institucional modelo.</p>
+        <h3>Institucional</h3>
+        <a href="capacitacao.html">Capacitação e Treinamento</a>
+        <a>História da PM</a>
+        <a>Insígnias</a>
+        <a>Legislação</a>
+        <a>Nossos Autores</a>
       </div>
       <div>
-        <p>Institucional • Corregedoria • Legislação • CComSoc</p>
-        <p>© Todos os direitos reservados.</p>
+        <h3>Programas de Policiamento</h3>
+        <a>Policiamento Escolar</a>
+        <a>Forças Táticas</a>
+        <a>Radiopatrulha - Atendimento 190</a>
+        <a>ROCAM</a>
+        <a>Policiamento de Trânsito</a>
+      </div>
+      <div>
+        <h3>Serviços</h3>
+        <a>Boletim de Ocorrência Eletrônico</a>
+        <a>Delegacia Eletrônica</a>
+        <a>Aplicativos PMESP</a>
+        <a>Orientações de Segurança</a>
+      </div>
+      <div>
+        <h3>Concursos</h3>
+        <h3>Comunidade</h3>
+        <a>CONSEG</a>
+        <h3>Fale Conosco</h3>
       </div>
     </div>
+    <div class="footer-buttons">
+      <button>Ouvidoria</button>
+      <button>Transparência</button>
+      <button>SIC</button>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
