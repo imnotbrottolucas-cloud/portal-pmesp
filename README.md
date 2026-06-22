@@ -1,3 +1,3 @@
-# Portal PMESP V3
+# Portal PMESP V6
 
-Inclui página História da PM com linha do tempo clicável.
+Pacote completo: index, capacitação, história, insígnias, CSS, JS e imagens.

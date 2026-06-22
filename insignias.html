@@ -1,44 +1,224 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Insígnias PMESP</title>
-<style>
-body{font-family:Arial,sans-serif;background:#f4f4f4;margin:0}
-header{background:#2f3136;color:#fff;padding:20px;text-align:center}
-.container{max-width:1200px;margin:auto;padding:20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.15);text-align:center}
-.ins{height:120px;background:#eaeaea;border-radius:6px;display:flex;align-items:center;justify-content:center}
-h3{margin:10px 0 5px}
-small{color:#666}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insígnias - PMESP</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><h1>Insígnias da Polícia Militar do Estado de São Paulo</h1></header>
-<div class="container">
-<p>As insígnias representam a hierarquia e a disciplina da Corporação.</p>
-<div class="grid">
-<div class="card"><div class="ins">Imagem</div><h3>Comandante-Geral</h3><small>Coronel PM</small></div>
-<div class="card"><div class="ins">Imagem</div><h3>Coronel PM</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>Tenente-Coronel PM</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>Major PM</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>Capitão PM</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>1º Tenente PM</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>2º Tenente PM</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>Aspirante a Oficial PM</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>Aluno Oficial 3º Ano</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>Aluno Oficial 2º Ano</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>Aluno Oficial 1º Ano</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>Aluno CSTAPM</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>Subtenente PM</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>1º Sargento PM</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>2º Sargento PM</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>3º Sargento PM</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>Aluno Sargento PM</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>Cabo PM</h3></div>
-<div class="card"><div class="ins">Imagem</div><h3>Soldado PM</h3></div>
+
+<div class="gov-top">
+  <div class="gov-logo">SÃO PAULO<br><span>GOVERNO DO ESTADO</span></div>
+  <div class="gov-social">fr · in · yt · ig · /governosp</div>
 </div>
-</div>
+
+<header class="site-header">
+  <div class="brand-area">
+    <div class="crest">PM</div>
+    <div>
+      <h1>POLÍCIA MILITAR DO ESTADO DE SÃO PAULO</h1>
+      <p>Secretaria da Segurança Pública</p>
+    </div>
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">PORTAL DE NOTÍCIAS</a>
+    <div class="nav-item">
+      <a class="active" href="#">INSTITUCIONAL</a>
+      <div class="mega-menu">
+        <div>
+          <a href="capacitacao.html">Capacitação e Treinamento</a>
+          <a href="historia.html">História da PM</a>
+          <a href="insignias.html">Insígnias</a>
+          <a href="#">Legislação</a>
+          <a href="#">Nossos Autores</a>
+        </div>
+        <div>
+          <a href="#">Organização</a>
+          <a href="#">Planejamento Estratégico</a>
+          <a href="#">Vultos Históricos</a>
+          <a href="#">Brasão de Armas</a>
+          <a href="#">Canção da PM</a>
+          <a href="#">Revista A Força Policial</a>
+        </div>
+        <div>
+          <h3>Programas de Policiamento</h3>
+          <a href="#">Policiamento Escolar</a>
+          <a href="#">Forças Táticas</a>
+          <a href="#">Radiopatrulha - Atendimento 190</a>
+          <a href="#">ROCAM</a>
+          <a href="#">Policiamento de Trânsito</a>
+          <a href="#">Policiamento Comunitário</a>
+        </div>
+      </div>
+    </div>
+    <a href="#">SERVIÇOS</a>
+    <a href="#">CONCURSOS</a>
+    <a href="#">COMUNIDADE</a>
+    <a href="#">FALE CONOSCO</a>
+  </nav>
+</header>
+
+<main class="container insignias-page">
+  <h2 class="page-title">Insígnias</h2>
+  <p class="intro">As insígnias representam a posição hierárquica ocupada pelo policial militar dentro da estrutura organizacional da Polícia Militar do Estado de São Paulo. Constituem símbolo de autoridade, responsabilidade e liderança, permitindo a identificação do posto ou graduação do integrante da Corporação.</p>
+  <div class="rank-grid">
+    <article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-01.png" alt="Comandante-Geral"></div>
+  <h3>Comandante-Geral</h3>
+  <p>Coronel PM</p>
+  <span>Oficial Superior</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-02.png" alt="Coronel PM"></div>
+  <h3>Coronel PM</h3>
+  <p>Oficial Superior</p>
+  <span>Oficiais</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-03.png" alt="Tenente-Coronel PM"></div>
+  <h3>Tenente-Coronel PM</h3>
+  <p>Oficial Superior</p>
+  <span>Oficiais</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-04.png" alt="Major PM"></div>
+  <h3>Major PM</h3>
+  <p>Oficial Superior</p>
+  <span>Oficiais</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-05.png" alt="Capitão PM"></div>
+  <h3>Capitão PM</h3>
+  <p>Oficial Intermediário</p>
+  <span>Oficiais</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-06.png" alt="1º Tenente PM"></div>
+  <h3>1º Tenente PM</h3>
+  <p>Oficial Subalterno</p>
+  <span>Oficiais</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-07.png" alt="2º Tenente PM"></div>
+  <h3>2º Tenente PM</h3>
+  <p>Oficial Subalterno</p>
+  <span>Oficiais</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-08.png" alt="Aspirante a Oficial PM"></div>
+  <h3>Aspirante a Oficial PM</h3>
+  <p>Praça Especial</p>
+  <span>Formação</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-09.png" alt="Aluno Oficial PM - 3º Ano"></div>
+  <h3>Aluno Oficial PM - 3º Ano</h3>
+  <p>Aluno Oficial</p>
+  <span>Formação</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-10.png" alt="Aluno Oficial PM - 2º Ano"></div>
+  <h3>Aluno Oficial PM - 2º Ano</h3>
+  <p>Aluno Oficial</p>
+  <span>Formação</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-11.png" alt="Aluno Oficial PM - 1º Ano"></div>
+  <h3>Aluno Oficial PM - 1º Ano</h3>
+  <p>Aluno Oficial</p>
+  <span>Formação</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-12.png" alt="Aluno CSTAPM"></div>
+  <h3>Aluno CSTAPM</h3>
+  <p>Aluno</p>
+  <span>Formação</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-13.png" alt="Subtenente PM"></div>
+  <h3>Subtenente PM</h3>
+  <p>Praça Especial</p>
+  <span>Praças</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-14.png" alt="1º Sargento PM"></div>
+  <h3>1º Sargento PM</h3>
+  <p>Praça Graduada</p>
+  <span>Praças</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-15.png" alt="2º Sargento PM"></div>
+  <h3>2º Sargento PM</h3>
+  <p>Praça Graduada</p>
+  <span>Praças</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-16.png" alt="3º Sargento PM"></div>
+  <h3>3º Sargento PM</h3>
+  <p>Praça Graduada</p>
+  <span>Praças</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-17.png" alt="Aluno Sargento PM"></div>
+  <h3>Aluno Sargento PM</h3>
+  <p>Aluno</p>
+  <span>Praças</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-18.png" alt="Cabo PM"></div>
+  <h3>Cabo PM</h3>
+  <p>Praça Graduada</p>
+  <span>Praças</span>
+</article>
+<article class="rank-card">
+  <div class="rank-img"><img src="assets/insignia-19.png" alt="Soldado PM"></div>
+  <h3>Soldado PM</h3>
+  <p>Praça</p>
+  <span>Praças</span>
+</article>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-cols">
+    <div>
+      <h3>Institucional</h3>
+      <a href="capacitacao.html">Capacitação e Treinamento</a>
+      <a href="historia.html">História da PM</a>
+      <a href="insignias.html">Insígnias</a>
+      <a>Legislação</a>
+      <a>Nossos Autores</a>
+    </div>
+    <div>
+      <h3>Programas de Policiamento</h3>
+      <a>Policiamento Escolar</a>
+      <a>Forças Táticas</a>
+      <a>Radiopatrulha - Atendimento 190</a>
+      <a>ROCAM</a>
+      <a>Policiamento de Trânsito</a>
+    </div>
+    <div>
+      <h3>Serviços</h3>
+      <a>Boletim de Ocorrência Eletrônico</a>
+      <a>Delegacia Eletrônica</a>
+      <a>Aplicativos PMESP</a>
+      <a>Orientações de Segurança</a>
+    </div>
+    <div>
+      <h3>Concursos</h3>
+      <h3>Comunidade</h3>
+      <a>CONSEG</a>
+      <h3>Fale Conosco</h3>
+    </div>
+  </div>
+  <div class="footer-buttons">
+    <button>Ouvidoria</button>
+    <button>Transparência</button>
+    <button>SIC</button>
+  </div>
+</footer>
+
 </body>
 </html>
