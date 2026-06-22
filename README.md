@@ -1,3 +1,3 @@
-# Portal PMESP V6
+# Portal PMESP V7
 
-Pacote completo: index, capacitação, história, insígnias, CSS, JS e imagens.
+Pacote completo com insígnias em ordem hierárquica correta.
