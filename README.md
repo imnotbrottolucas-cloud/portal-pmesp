@@ -1,3 +1,3 @@
-# Portal PMESP V10
+# Portal PMESP V11
 
-Correções: imagem da capacitação e espaçamento interno dos textos/acordeões.
+Capacitação completa em acordeões no padrão do portal oficial, mantendo Home, História e Insígnias.
