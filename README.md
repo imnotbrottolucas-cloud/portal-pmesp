@@ -1,3 +1,3 @@
-# Portal PMESP V13
+# Portal PMESP V14
 
-Versão corrigida: História em 1830, imagens dentro de assets/historia e carrossel funcionando.
+Correção definitiva: fotos da História carregam diretamente de assets/.

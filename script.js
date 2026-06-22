@@ -57,7 +57,7 @@ function renderHistoryPhoto(){
   const img=document.getElementById("eventImage");
   if(!img) return;
   const e=events[currentIndex];
-  img.src="assets/historia/"+e.images[currentPhotoIndex];
+  img.src="assets/"+e.images[currentPhotoIndex];
   img.alt=e.title;
   const counter=document.getElementById("photoCounter");
   if(counter) counter.textContent=(currentPhotoIndex+1)+" de "+e.images.length;
@@ -72,29 +72,9 @@ function renderHistoryPhoto(){
     });
   }
 }
-
-function nextHistoryPhoto(){
-  const e=events[currentIndex];
-  currentPhotoIndex=(currentPhotoIndex+1)%e.images.length;
-  renderHistoryPhoto();
-  restartHistoryTimer();
-}
-
-function prevHistoryPhoto(){
-  const e=events[currentIndex];
-  currentPhotoIndex=(currentPhotoIndex-1+e.images.length)%e.images.length;
-  renderHistoryPhoto();
-  restartHistoryTimer();
-}
-
-function restartHistoryTimer(){
-  if(historyPhotoTimer) clearInterval(historyPhotoTimer);
-  historyPhotoTimer=setInterval(()=>{
-    const e=events[currentIndex];
-    if(e.images.length>1) nextHistoryPhoto();
-  },5000);
-}
-
+function nextHistoryPhoto(){const e=events[currentIndex];currentPhotoIndex=(currentPhotoIndex+1)%e.images.length;renderHistoryPhoto();restartHistoryTimer();}
+function prevHistoryPhoto(){const e=events[currentIndex];currentPhotoIndex=(currentPhotoIndex-1+e.images.length)%e.images.length;renderHistoryPhoto();restartHistoryTimer();}
+function restartHistoryTimer(){if(historyPhotoTimer) clearInterval(historyPhotoTimer);historyPhotoTimer=setInterval(()=>{const e=events[currentIndex];if(e.images.length>1) nextHistoryPhoto();},5000);}
 function nextEvent(){renderEvent((currentIndex+1)%events.length)}
 function prevEvent(){renderEvent((currentIndex-1+events.length)%events.length)}
 
@@ -119,49 +99,8 @@ const ranks=[
 {name:"Cabo PM",category:"Praça",img:"insignia-18.png"},
 {name:"Soldado PM",category:"Praça",img:"insignia-19.png"}
 ];
-
 let rankIndex=0;
-function renderRank(i){
-  if(!document.getElementById("rankImage")) return;
-  rankIndex=i;
-  const r=ranks[i];
-  const img=document.getElementById("rankImage");
-  img.src="assets/"+r.img;
-  img.alt=r.name;
-  img.onerror=function(){this.onerror=null;this.src=r.img;};
-  document.getElementById("rankName").textContent=r.name;
-  document.getElementById("rankCategory").textContent=r.category;
-  const counter=document.getElementById("rankCounter");
-  if(counter) counter.textContent=(i+1)+" de "+ranks.length;
-  document.querySelectorAll(".rank-dot").forEach((d,idx)=>d.classList.toggle("active",idx===i));
-}
+function renderRank(i){if(!document.getElementById("rankImage")) return;rankIndex=i;const r=ranks[i];const img=document.getElementById("rankImage");img.src="assets/"+r.img;img.alt=r.name;img.onerror=function(){this.onerror=null;this.src=r.img;};document.getElementById("rankName").textContent=r.name;document.getElementById("rankCategory").textContent=r.category;const counter=document.getElementById("rankCounter");if(counter) counter.textContent=(i+1)+" de "+ranks.length;document.querySelectorAll(".rank-dot").forEach((d,idx)=>d.classList.toggle("active",idx===i));}
 function nextRank(){renderRank((rankIndex+1)%ranks.length)}
 function prevRank(){renderRank((rankIndex-1+ranks.length)%ranks.length)}
-
-document.addEventListener("DOMContentLoaded",()=>{
-  document.querySelectorAll(".timeline .dot").forEach(d=>d.addEventListener("click",()=>{
-    const i=events.findIndex(e=>e.year===d.dataset.year);
-    if(i>=0) renderEvent(i);
-  }));
-
-  renderEvent(0);
-
-  const dots=document.getElementById("rankDots");
-  if(dots){
-    ranks.forEach((r,i)=>{
-      const b=document.createElement("button");
-      b.className="rank-dot"+(i===0?" active":"");
-      b.title=r.name;
-      b.onclick=()=>renderRank(i);
-      dots.appendChild(b);
-    });
-    renderRank(0);
-  }
-
-  document.addEventListener("keydown",(e)=>{
-    if(document.getElementById("rankImage")){
-      if(e.key==="ArrowRight") nextRank();
-      if(e.key==="ArrowLeft") prevRank();
-    }
-  });
-});
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".timeline .dot").forEach(d=>d.addEventListener("click",()=>{const i=events.findIndex(e=>e.year===d.dataset.year);if(i>=0) renderEvent(i);}));renderEvent(0);const dots=document.getElementById("rankDots");if(dots){ranks.forEach((r,i)=>{const b=document.createElement("button");b.className="rank-dot"+(i===0?" active":"");b.title=r.name;b.onclick=()=>renderRank(i);dots.appendChild(b);});renderRank(0);}document.addEventListener("keydown",(e)=>{if(document.getElementById("rankImage")){if(e.key==="ArrowRight") nextRank();if(e.key==="ArrowLeft") prevRank();}});});
