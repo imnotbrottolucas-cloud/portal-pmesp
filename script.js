@@ -1,6 +1,6 @@
 const events=[
-{year:"1831",title:"Criação do Corpo de Guardas Municipais Permanentes",images:["historia-1831-1.png","historia-1831-2.png"],text:[
-"Em 15 de dezembro de 1831, o então Presidente da Província de São Paulo, Brigadeiro Rafael Tobias de Aguiar, criou o Corpo de Guardas Municipais Permanentes, instituição que daria origem à atual Polícia Militar do Estado de São Paulo.",
+{year:"1830",title:"Criação do Corpo de Guardas Municipais Permanentes",images:["historia-1831-1.png","historia-1831-2.png"],text:[
+"Em 15 de dezembro de 1830, o então Presidente da Província de São Paulo, Brigadeiro Rafael Tobias de Aguiar, criou o Corpo de Guardas Municipais Permanentes, instituição que daria origem à atual Polícia Militar do Estado de São Paulo.",
 "A nova força foi criada com a missão de manter a ordem pública, garantir a segurança da população e apoiar as autoridades provinciais em um período de profundas transformações políticas e sociais no Brasil.",
 "O efetivo inicial era composto por 130 homens, sendo 100 integrantes da Infantaria e 30 da Cavalaria. Esse grupo ficou conhecido como os Cento e Trinta de Trinta e Um, tornando-se símbolo da origem da Corporação.",
 "A organização possuía disciplina militar, estrutura hierárquica definida e treinamento voltado para o cumprimento das atribuições de segurança pública. Ao longo das décadas seguintes, acompanhou o crescimento do Estado de São Paulo."
