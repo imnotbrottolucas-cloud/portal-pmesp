@@ -1,3 +1,3 @@
-# Portal PMESP V9 Corrigido
+# Portal PMESP V10
 
-Pacote completo corrigido: capacitação com imagem nova e texto funcionando, insígnias em carrossel e categorias ajustadas.
+Correções: imagem da capacitação e espaçamento interno dos textos/acordeões.
