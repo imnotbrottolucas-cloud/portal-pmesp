@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PMESP - Portal Institucional</title>
+  <title>História da PM - PMESP</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -60,28 +60,49 @@
     </nav>
   </header>
 
-  <section class="hero-official">
-    <div class="hero-text">
-      <h2>A SEGURANÇA COMEÇA COM A CONEXÃO:</h2>
-      <h3>POLÍCIA MILITAR E CIDADÃO</h3>
-      <p>Portal institucional, serviços, legislação, capacitação e informações ao cidadão.</p>
-    </div>
-  </section>
+  <main class="history-page">
+    <div class="history-wrap">
+      <h2 class="history-title">História da PM</h2>
 
-  <section class="service-strip">
-    <a>CADASTRO DE PESSOA SURDA, DE PCD AUDITIVA OU FALA</a>
-    <a>APLICATIVOS PMESP</a>
-    <a>UNIDADES POLICIAIS</a>
-    <a>BOLETIM DE OCORRÊNCIA ELETRÔNICO</a>
-    <a>ORIENTAÇÕES DE SEGURANÇA</a>
-  </section>
+      <div class="timeline" id="timeline">
+        <button class="dot active" data-year="1830"><span>1830</span></button>
+        <button class="dot" data-year="1857"><span>1857</span></button>
+        <button class="dot" data-year="1864"><span>1864</span></button>
+        <button class="dot" data-year="1880"><span>1880</span></button>
+        <button class="dot" data-year="1888"><span>1888</span></button>
+        <button class="dot" data-year="1891"><span>1891</span></button>
+        <button class="dot" data-year="1892"><span>1892</span></button>
+        <button class="dot" data-year="1893"><span>1893</span></button>
+        <button class="dot" data-year="1906"><span>1906</span></button>
+        <button class="dot" data-year="1910"><span>1910</span></button>
+        <button class="dot" data-year="1924"><span>1924</span></button>
+        <button class="dot" data-year="1926"><span>1926</span></button>
+        <button class="dot" data-year="1970"><span>1970</span></button>
+        <button class="dot" data-year="2006"><span>2006</span></button>
+        <button class="dot" data-year="2007"><span>2007</span></button>
+      </div>
 
-  <main class="container">
-    <h2 class="section-heading">ÚLTIMAS NOTÍCIAS</h2>
-    <div class="news-grid">
-      <article><div class="news-img"></div><h3>Comunicado institucional</h3><p>Publicações e informações da Corporação.</p></article>
-      <article><div class="news-img"></div><h3>Capacitação e treinamento</h3><p>Conheça os órgãos de ensino da Polícia Militar.</p></article>
-      <article><div class="news-img"></div><h3>História da PM</h3><p>Acompanhe a linha do tempo histórica da Corporação.</p></article>
+      <section class="history-card">
+        <button class="arrow left" onclick="prevEvent()">‹</button>
+        <div class="history-text">
+          <h3 id="eventTitle">O início ... 1830</h3>
+          <div id="eventText">
+            <p>Nas primeiras décadas do século XIX, a São Paulo colonial ainda era o "burgo dos estudantes", fortemente marcada pela presença da Faculdade de Direito, criada por ordem de Dom Pedro I, em 1827.</p>
+            <p>O ato da criação pode ser reconhecido pela reunião do conselho da Província de São Paulo presidida pelo Brigadeiro Rafael Tobias de Aguiar, realizada em 15 de dezembro de 1831. O efetivo inicial era composto por 100 homens a pé e 30 a cavalo.</p>
+            <p>A partir de março de 1832, a Instituição, pela falta de aquartelamento próprio, foi instalada na ala térrea do Convento do Carmo, situada no quadrilátero da Sé e hoje demolida.</p>
+            <p>A milícia paulista, nos seus anos de existência, foi organizada e reorganizada diversas vezes. Inicialmente, recebeu o nome de Guarda Municipal Permanente.</p>
+            <p>A menor subunidade da Guarda Municipal Permanente, em 1831, era a esquadra, formada por um cabo e 24 soldados.</p>
+          </div>
+        </div>
+
+        <div class="history-image">
+          <div id="eventImage" class="fake-photo photo-1830"></div>
+          <div class="image-dots">
+            <span></span><span></span><span class="dark"></span>
+          </div>
+        </div>
+        <button class="arrow right" onclick="nextEvent()">›</button>
+      </section>
     </div>
   </main>
 
@@ -124,5 +145,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

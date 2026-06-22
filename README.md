@@ -1,3 +1,3 @@
-# Portal PMESP V2
+# Portal PMESP V3
 
-Arquivos da versão institucional com aba Capacitação e Treinamento.
+Inclui página História da PM com linha do tempo clicável.
