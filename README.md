@@ -1,3 +1,3 @@
-# Portal PMESP V7
+# Portal PMESP V8
 
-Pacote completo com insígnias em ordem hierárquica correta.
+Insígnias em carrossel igual ao modelo PMESP.

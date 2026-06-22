@@ -60,124 +60,22 @@
   </nav>
 </header>
 
-<main class="container insignias-page">
-  <h2 class="page-title">Insígnias</h2>
-  <p class="intro">As insígnias representam a posição hierárquica ocupada pelo policial militar dentro da estrutura organizacional da Polícia Militar do Estado de São Paulo. Abaixo estão organizadas conforme a ordem hierárquica informada: Oficiais Superiores, Oficiais Intermediários e Subalternos, Alunos Oficiais e Praças.</p>
-  <h3 class="rank-section-title">Oficiais Superiores</h3><div class="rank-grid">
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-01.png" alt="Comandante-Geral"></div>
-          <h4>Comandante-Geral</h4>
-          <p>Coronel PM</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-02.png" alt="Coronel PM"></div>
-          <h4>Coronel PM</h4>
-          <p>Oficial Superior</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-03.png" alt="Tenente-Coronel PM"></div>
-          <h4>Tenente-Coronel PM</h4>
-          <p>Oficial Superior</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-04.png" alt="Major PM"></div>
-          <h4>Major PM</h4>
-          <p>Oficial Superior</p>
-        </article>
-        </div><h3 class="rank-section-title">Oficiais Intermediários e Subalternos</h3><div class="rank-grid">
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-05.png" alt="Capitão PM"></div>
-          <h4>Capitão PM</h4>
-          <p>Oficial Intermediário</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-06.png" alt="1º Tenente PM"></div>
-          <h4>1º Tenente PM</h4>
-          <p>Oficial Subalterno</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-07.png" alt="2º Tenente PM"></div>
-          <h4>2º Tenente PM</h4>
-          <p>Oficial Subalterno</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-08.png" alt="Aspirante a Oficial PM"></div>
-          <h4>Aspirante a Oficial PM</h4>
-          <p>Praça Especial</p>
-        </article>
-        </div><h3 class="rank-section-title">Alunos Oficiais</h3><div class="rank-grid">
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-09.png" alt="Aluno Oficial PM - 3º Ano"></div>
-          <h4>Aluno Oficial PM - 3º Ano</h4>
-          <p>Aluno Oficial</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-10.png" alt="Aluno Oficial PM - 2º Ano"></div>
-          <h4>Aluno Oficial PM - 2º Ano</h4>
-          <p>Aluno Oficial</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-11.png" alt="Aluno Oficial PM - 1º Ano"></div>
-          <h4>Aluno Oficial PM - 1º Ano</h4>
-          <p>Aluno Oficial</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-12.png" alt="Aluno CSTAPM"></div>
-          <h4>Aluno CSTAPM</h4>
-          <p>Aluno</p>
-        </article>
-        </div><h3 class="rank-section-title">Praças</h3><div class="rank-grid">
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-13.png" alt="Subtenente PM"></div>
-          <h4>Subtenente PM</h4>
-          <p>Praça Especial</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-14.png" alt="1º Sargento PM"></div>
-          <h4>1º Sargento PM</h4>
-          <p>Praça Graduada</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-15.png" alt="2º Sargento PM"></div>
-          <h4>2º Sargento PM</h4>
-          <p>Praça Graduada</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-16.png" alt="3º Sargento PM"></div>
-          <h4>3º Sargento PM</h4>
-          <p>Praça Graduada</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-17.png" alt="Aluno Sargento PM"></div>
-          <h4>Aluno Sargento PM</h4>
-          <p>Aluno</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-18.png" alt="Cabo PM"></div>
-          <h4>Cabo PM</h4>
-          <p>Praça Graduada</p>
-        </article>
-        
-        <article class="rank-card">
-          <div class="rank-img"><img src="assets/insignia-19.png" alt="Soldado PM"></div>
-          <h4>Soldado PM</h4>
-          <p>Praça</p>
-        </article>
-        </div>
+<main class="insignia-carousel-page">
+  <div class="insignia-stage">
+    <h2>Insígnias</h2>
+
+    <button class="insignia-arrow arrow-prev" onclick="prevRank()">‹ <span>Anterior</span></button>
+
+    <section class="insignia-view">
+      <img id="rankImage" src="assets/insignia-01.png" alt="Comandante-Geral" onerror="this.onerror=null; this.src='insignia-01.png';">
+      <h3 id="rankName">Comandante Geral - Coronel PM</h3>
+      <p id="rankCategory">Oficiais Superiores</p>
+    </section>
+
+    <button class="insignia-arrow arrow-next" onclick="nextRank()"><span>Próximo</span> ›</button>
+
+    <div class="rank-dots" id="rankDots"></div>
+  </div>
 </main>
 
 <footer class="footer">
@@ -219,5 +117,6 @@
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
