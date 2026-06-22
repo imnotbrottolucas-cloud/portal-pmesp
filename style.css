@@ -5,3 +5,79 @@ object-fit:cover;
 display:block;
 background:#f4f4f4;
 }.history-photo-controls{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:14px;color:#777;font-size:14px}.history-photo-controls button{border:0;background:transparent;color:#b12b12;font-size:32px;cursor:pointer;line-height:1}.image-dots{text-align:center;margin-top:16px}.image-dots span{display:inline-block;width:20px;height:20px;background:#c52411;border-radius:50%;margin:0 6px;cursor:pointer}.image-dots .dark{background:#333}.arrow{position:absolute;top:205px;border:0;background:transparent;color:#c9c9c9;font-size:86px;cursor:pointer}.arrow.left{left:10px}.arrow.right{right:10px}.insignia-carousel-page{min-height:620px;background:#fff;padding:38px 0 70px}.insignia-stage{position:relative;width:min(1180px,94%);margin:0 auto;text-align:center;min-height:520px}.insignia-stage h2{text-align:left;font-size:40px;margin:0 0 34px;color:#000}.insignia-view{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:360px}.insignia-view img{max-width:360px;max-height:270px;object-fit:contain;margin:10px auto 35px;display:block}.insignia-view h3{font-size:28px;font-weight:400;color:#3d3d3d;margin:0}.insignia-view p{font-size:16px;color:#777;margin:8px 0 0}.insignia-arrow{position:absolute;top:210px;border:0;background:transparent;color:#bfbfbf;font-size:84px;cursor:pointer;display:flex;align-items:center;gap:8px}.insignia-arrow span{font-size:18px;color:#999}.arrow-prev{left:0}.arrow-next{right:0}.rank-counter{font-size:14px;color:#777;margin-top:6px}.rank-dots{margin-top:10px}.rank-dot{width:14px;height:14px;background:#c12a0c;border:0;border-radius:50%;margin:0 5px;cursor:pointer}.rank-dot.active{background:#333}@media(max-width:900px){.gov-top{height:auto;padding:10px;display:block}.gov-logo{border-radius:20px;padding:14px}.brand-area{padding:18px;height:auto}.brand-area h1{font-size:18px}.main-nav{height:auto;flex-wrap:wrap;justify-content:flex-start}.nav-item:hover .mega-menu{display:none}.hero-official{height:320px}.service-strip,.news-grid,.footer-cols,.page{grid-template-columns:1fr}.section-heading:after{display:none}.history-card{grid-template-columns:1fr;padding:0 15px}.history-text{padding-left:0}.timeline{overflow-x:auto;gap:36px;justify-content:flex-start}.dot{min-width:70px}.history-image{padding:18px}.history-carousel-box img{height:260px}.arrow{display:none}.insignia-arrow{position:static;display:inline-flex;font-size:48px;margin:10px}.insignia-stage h2{text-align:center}.insignia-view img{max-width:260px}.training-photo{max-width:260px}.content{padding:0 8px 25px}}
+
+
+/* AJUSTE FINAL - Fotos da História da PM */
+.history-carousel-box img,
+#eventImage{
+  width: 100% !important;
+  height: 420px !important;
+  object-fit: contain !important;
+  display: block !important;
+  background: #f4f4f4 !important;
+}
+
+
+/* Página Legislação */
+.legislation-page{
+  display:grid;
+  grid-template-columns:340px 1fr;
+  gap:46px;
+  padding:45px 0 80px;
+  align-items:start;
+}
+.legislation-photo{
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+}
+.legislation-photo img{
+  max-width:330px;
+  width:100%;
+  height:auto;
+  display:block;
+}
+.legislation-content p{
+  font-size:17px;
+  line-height:1.65;
+  color:#1f2e44;
+  margin:0 0 18px;
+}
+.law-list{
+  margin-top:34px;
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+}
+.law-link{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  color:#17335c;
+  text-decoration:none;
+  font-size:18px;
+  line-height:1.4;
+  padding:5px 0;
+}
+.law-link:hover span:last-child{
+  text-decoration:underline;
+}
+.law-icon{
+  font-size:26px;
+  color:#000;
+  line-height:1;
+  width:28px;
+  text-align:center;
+}
+@media(max-width:900px){
+  .legislation-page{
+    grid-template-columns:1fr;
+    padding:30px 0 60px;
+  }
+  .legislation-photo img{
+    max-width:280px;
+  }
+  .law-link{
+    font-size:16px;
+  }
+}
