@@ -5,6 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Legislação - PMESP</title>
   <link rel="stylesheet" href="style.css">
+
+<style>
+/* Correção direta da página Legislação */
+.leg-page-title{
+  width:min(1180px,94%);
+  margin:34px auto 34px;
+}
+.leg-page-title h2{
+  font-size:34px;
+  line-height:1.1;
+  color:#000;
+  font-weight:800;
+  margin:0;
+}
+.leg-main{
+  width:min(1180px,94%);
+  margin:0 auto 80px;
+  display:flex;
+  align-items:flex-start;
+  gap:70px;
+}
+.leg-photo{
+  flex:0 0 330px;
+}
+.leg-photo img{
+  width:330px;
+  max-width:330px;
+  height:auto;
+  display:block;
+}
+.leg-content{
+  flex:1;
+  padding-top:4px;
+}
+.leg-content p{
+  font-size:18px;
+  line-height:1.55;
+  color:#1f2e44;
+  margin:0 0 26px;
+}
+.leg-list{
+  margin-top:34px;
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+}
+.leg-link{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  color:#17335c;
+  text-decoration:none;
+  font-size:18px;
+  line-height:1.4;
+}
+.leg-link:hover{
+  text-decoration:underline;
+}
+.leg-icon{
+  color:#000;
+  font-size:26px;
+  width:28px;
+  text-align:center;
+  line-height:1;
+}
+@media(max-width:900px){
+  .leg-main{
+    flex-direction:column;
+    gap:24px;
+  }
+  .leg-photo img{
+    width:280px;
+    max-width:280px;
+  }
+  .leg-content p,.leg-link{
+    font-size:16px;
+  }
+}
+</style>
+
 </head>
 <body>
 <div class="gov-top">
@@ -61,41 +141,45 @@
 
 
 
-<div class="container">
-  <h2 class="page-title">Legislação</h2>
+
+<div class="legislation-title-wrap">
+  <h2>Legislação</h2>
 </div>
 
-<main class="legislation-page">
 
-  <aside class="legislation-photo">
+<div class="leg-page-title">
+  <h2>Legislação</h2>
+</div>
+
+<main class="leg-main">
+  <aside class="leg-photo">
     <img src="assets/legislacao-pm.png" alt="Policial Militar com a bandeira do Estado de São Paulo">
   </aside>
 
-  <section class="legislation-content">
-
+  <section class="leg-content">
     <p>A Polícia Militar do Estado de São Paulo disponibiliza seus principais regulamentos institucionais para consulta, visando garantir transparência, padronização administrativa e acesso às normas que orientam a Corporação.</p>
 
     <p>Selecione abaixo o regulamento desejado para abrir o documento correspondente em uma nova página.</p>
 
-    <div class="law-list">
-      <a class="law-link" href="https://docs.google.com/document/d/13VWRryDE1p6or5WbMW3d5_zCLZyziI9FA1CeMZnAkAc/edit?usp=sharing" target="_blank" rel="noopener">
-        <span class="law-icon">↧</span>
+    <div class="leg-list">
+      <a class="leg-link" href="https://docs.google.com/document/d/13VWRryDE1p6or5WbMW3d5_zCLZyziI9FA1CeMZnAkAc/edit?usp=sharing" target="_blank" rel="noopener">
+        <span class="leg-icon">↧</span>
         <span><strong>R-1-PM</strong> — Regulamento Geral da Polícia Militar</span>
       </a>
-      <a class="law-link" href="https://docs.google.com/document/d/1nbTC-V0B8ZzFEb95NBbOYiaTbxzGILaZEp61V-5bZao/edit?usp=sharing" target="_blank" rel="noopener">
-        <span class="law-icon">↧</span>
+      <a class="leg-link" href="https://docs.google.com/document/d/1nbTC-V0B8ZzFEb95NBbOYiaTbxzGILaZEp61V-5bZao/edit?usp=sharing" target="_blank" rel="noopener">
+        <span class="leg-icon">↧</span>
         <span><strong>R-2-PM</strong> — Regulamento de Continências, Sinais de Respeito e Cerimonial Militar</span>
       </a>
-      <a class="law-link" href="https://docs.google.com/document/d/1g4p47XSng8fjzIYFRWbJDUpzDhKMgluCsV4UD9RETLg/edit?usp=sharing" target="_blank" rel="noopener">
-        <span class="law-icon">↧</span>
+      <a class="leg-link" href="https://docs.google.com/document/d/1g4p47XSng8fjzIYFRWbJDUpzDhKMgluCsV4UD9RETLg/edit?usp=sharing" target="_blank" rel="noopener">
+        <span class="leg-icon">↧</span>
         <span><strong>R-3-PM</strong> — Regulamento de Serviços Gerais</span>
       </a>
-      <a class="law-link" href="https://docs.google.com/document/d/15yQ_i10PTh7Dx62PLcA7C8khuxIJjN6znI8gIbBblY0/edit?usp=sharing" target="_blank" rel="noopener">
-        <span class="law-icon">↧</span>
+      <a class="leg-link" href="https://docs.google.com/document/d/15yQ_i10PTh7Dx62PLcA7C8khuxIJjN6znI8gIbBblY0/edit?usp=sharing" target="_blank" rel="noopener">
+        <span class="leg-icon">↧</span>
         <span><strong>R-4-PM</strong> — Regulamento de Escalas, Plantões e Emprego Operacional</span>
       </a>
-      <a class="law-link" href="https://docs.google.com/document/d/1whaysQRvcypeZ2EOfmOY_T3lEcjhQoAyemmnGNQ6tyg/edit?usp=sharing" target="_blank" rel="noopener">
-        <span class="law-icon">↧</span>
+      <a class="leg-link" href="https://docs.google.com/document/d/1whaysQRvcypeZ2EOfmOY_T3lEcjhQoAyemmnGNQ6tyg/edit?usp=sharing" target="_blank" rel="noopener">
+        <span class="leg-icon">↧</span>
         <span><strong>R-5-PM</strong> — Regulamento de Informações e Comunicação Institucional</span>
       </a>
     </div>

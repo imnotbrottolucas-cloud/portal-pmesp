@@ -18,86 +18,102 @@ background:#f4f4f4;
 }
 
 
-/* Página Legislação */
+/* Página Legislação - layout igual ao portal oficial */
+.legislation-title-wrap{
+  width:min(1180px,94%) !important;
+  margin:34px auto 0 !important;
+}
+
+.legislation-title-wrap h2{
+  font-size:34px !important;
+  margin:0 0 34px !important;
+  color:#000 !important;
+  font-weight:800 !important;
+}
+
 .legislation-page{
-    display:grid;
-    grid-template-columns:380px 1fr;
-    gap:50px;
-    align-items:start;
-    padding:40px 0 70px;
+  width:min(1180px,94%) !important;
+  margin:0 auto 80px !important;
+  display:flex !important;
+  align-items:flex-start !important;
+  gap:70px !important;
+  padding:0 !important;
 }
 
 .legislation-photo{
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
+  flex:0 0 330px !important;
+  display:block !important;
+  text-align:left !important;
 }
 
 .legislation-photo img{
-    width:100%;
-    max-width:350px;
-    height:auto;
-    display:block;
+  width:330px !important;
+  max-width:330px !important;
+  height:auto !important;
+  display:block !important;
 }
 
 .legislation-content{
-    padding-top:20px;
+  flex:1 !important;
+  padding-top:10px !important;
+}
+
+.legislation-content .page-title{
+  display:none !important;
 }
 
 .legislation-content p{
-    font-size:18px;
-    line-height:1.7;
-    color:#1f2e44;
-    margin-bottom:20px;
+  font-size:18px !important;
+  line-height:1.55 !important;
+  color:#1f2e44 !important;
+  margin:0 0 24px !important;
 }
 
 .law-list{
-    margin-top:30px;
+  margin-top:34px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  gap:22px !important;
 }
 
 .law-link{
-    display:flex;
-    align-items:center;
-    gap:14px;
-    text-decoration:none;
-    color:#243a5a;
-    font-size:18px;
-    margin-bottom:22px;
+  display:flex !important;
+  align-items:center !important;
+  gap:16px !important;
+  color:#17335c !important;
+  text-decoration:none !important;
+  font-size:18px !important;
+  line-height:1.4 !important;
 }
 
 .law-link:hover{
-    color:#c60000;
+  text-decoration:underline !important;
 }
 
 .law-icon{
-    font-size:24px;
-    color:#000;
-    width:28px;
-    text-align:center;
+  font-size:26px !important;
+  color:#000 !important;
+  width:28px !important;
+  text-align:center !important;
 }
 
 @media(max-width:900px){
-    .legislation-page{
-        grid-template-columns:1fr;
-        padding:30px 0 60px;
-    }
-
-    .legislation-photo img{
-        max-width:280px;
-    }
-
-    .law-link{
-        font-size:16px;
-    }
-}
   .legislation-page{
-    grid-template-columns:1fr;
-    padding:30px 0 60px;
+    flex-direction:column !important;
+    gap:20px !important;
+    padding:0 20px 60px !important;
   }
+
+  .legislation-title-wrap{
+    padding:0 20px !important;
+  }
+
   .legislation-photo img{
-    max-width:280px;
+    width:280px !important;
+    max-width:280px !important;
   }
+
   .law-link{
-    font-size:16px;
+    font-size:16px !important;
   }
 }

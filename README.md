@@ -1,3 +1,3 @@
-# Portal PMESP - V15 Legislação
+# Portal PMESP V17
 
-Inclui página de Legislação com links para R-1, R-2, R-3, R-4 e R-5 via Google Docs.
+Página Legislação corrigida com layout em duas colunas e estilo aplicado diretamente na página.
