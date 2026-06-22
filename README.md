@@ -1,3 +1,3 @@
-# Portal PMESP V11
+# Portal PMESP V12
 
-Capacitação completa em acordeões no padrão do portal oficial, mantendo Home, História e Insígnias.
+História da PM atualizada com linha do tempo, textos completos e carrossel de fotos por ano.
